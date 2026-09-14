@@ -1,5 +1,3 @@
-// ignore_for_file: deprecated_member_use
-
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:web_dashboard/utils/colors.dart';
@@ -15,9 +13,9 @@ class Container1 extends StatefulWidget {
 class _Container1State extends State<Container1> {
   @override
   Widget build(BuildContext context) {
-    return ScreenTypeLayout(
-      mobile: mobileContainer1(),
-      desktop: desktopContainer1(),
+    return ScreenTypeLayout.builder(
+      mobile: (BuildContext context) => mobileContainer1(),
+      desktop: (BuildContext context) => desktopContainer1(),
     );
   }
 
@@ -25,10 +23,7 @@ class _Container1State extends State<Container1> {
 
   Widget mobileContainer1() {
     return Container(
-      margin: EdgeInsets.symmetric(
-        horizontal: w! / 10,
-        vertical: 20,
-      ),
+      margin: EdgeInsets.symmetric(horizontal: w! / 10, vertical: 20),
       child: Column(
         children: [
           Container(
@@ -55,19 +50,14 @@ class _Container1State extends State<Container1> {
           Text(
             'Helps you to organize your income and expenses',
             textAlign: TextAlign.center,
-            style: TextStyle(
-              color: Colors.grey.shade600,
-              fontSize: 16,
-            ),
+            style: TextStyle(color: Colors.grey.shade600, fontSize: 16),
           ),
           const SizedBox(height: 30),
           SizedBox(
             height: 45,
             child: ElevatedButton.icon(
               style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(
-                  AppColors.primary,
-                ),
+                backgroundColor: WidgetStateProperty.all(AppColors.primary),
               ),
               onPressed: () {},
               icon: const Icon(Icons.arrow_drop_down),
@@ -77,10 +67,7 @@ class _Container1State extends State<Container1> {
           const SizedBox(height: 10),
           Text(
             '— Web, iOs and Android',
-            style: TextStyle(
-              color: Colors.grey.shade600,
-              fontSize: 16,
-            ),
+            style: TextStyle(color: Colors.grey.shade600, fontSize: 16),
           ),
         ],
       ),
@@ -91,10 +78,7 @@ class _Container1State extends State<Container1> {
 
   Widget desktopContainer1() {
     return Container(
-      margin: EdgeInsets.symmetric(
-        horizontal: w! / 10,
-        vertical: 20,
-      ),
+      margin: EdgeInsets.symmetric(horizontal: w! / 10, vertical: 20),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
@@ -113,10 +97,7 @@ class _Container1State extends State<Container1> {
                 const SizedBox(height: 20),
                 Text(
                   'Helps you to organize your income and expenses',
-                  style: TextStyle(
-                    color: Colors.grey.shade400,
-                    fontSize: 16,
-                  ),
+                  style: TextStyle(color: Colors.grey.shade400, fontSize: 16),
                 ),
                 const SizedBox(height: 20),
                 Row(
@@ -125,7 +106,7 @@ class _Container1State extends State<Container1> {
                       height: 45,
                       child: ElevatedButton.icon(
                         style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all(
+                          backgroundColor: WidgetStateProperty.all(
                             AppColors.primary,
                           ),
                         ),

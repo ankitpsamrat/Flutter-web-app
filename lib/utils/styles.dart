@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:web_dashboard/utils/colors.dart';
 
 ButtonStyle borderedButtonStyle = ButtonStyle(
-  elevation: MaterialStateProperty.all(0),
-  backgroundColor: MaterialStateProperty.all(Colors.white),
-  shape: MaterialStateProperty.all(
+  elevation: WidgetStateProperty.all(0),
+  backgroundColor: WidgetStateProperty.all(Colors.white),
+  shape: WidgetStateProperty.all(
     RoundedRectangleBorder(
       side: BorderSide(color: AppColors.primary),
       borderRadius: BorderRadius.circular(10),

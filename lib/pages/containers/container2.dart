@@ -1,5 +1,3 @@
-// ignore_for_file: deprecated_member_use
-
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:web_dashboard/utils/colors.dart';
@@ -15,13 +13,13 @@ class Container2 extends StatefulWidget {
 class _Container2State extends State<Container2> {
   @override
   Widget build(BuildContext context) {
-    return ScreenTypeLayout(
-      mobile: mobileContainer2(),
-      desktop: desktopContainer2(),
+    return ScreenTypeLayout.builder(
+      mobile: (BuildContext context) => mobileContainer2(),
+      desktop: (BuildContext context) => desktopContainer2(),
     );
   }
 
-//=========== MOBILE ===========
+  //=========== MOBILE ===========
 
   Widget mobileContainer2() {
     return Container(
@@ -56,7 +54,7 @@ class _Container2State extends State<Container2> {
                 companyLogo(fb),
                 companyLogo(google),
                 companyLogo(cocacola),
-                companyLogo(samsung)
+                companyLogo(samsung),
               ],
             ),
           ),
@@ -65,7 +63,7 @@ class _Container2State extends State<Container2> {
     );
   }
 
-//=========== DESKTOP ===========
+  //=========== DESKTOP ===========
 
   Widget desktopContainer2() {
     return Container(
@@ -113,9 +111,7 @@ class _Container2State extends State<Container2> {
                     width: double.infinity,
                     height: 712,
                     decoration: const BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage(dashboard),
-                      ),
+                      image: DecorationImage(image: AssetImage(dashboard)),
                     ),
                   ),
                 ),
@@ -131,7 +127,7 @@ class _Container2State extends State<Container2> {
                 companyLogo(fb),
                 companyLogo(google),
                 companyLogo(cocacola),
-                companyLogo(samsung)
+                companyLogo(samsung),
               ],
             ),
           ),
@@ -146,10 +142,7 @@ class _Container2State extends State<Container2> {
       height: 36,
       margin: const EdgeInsets.only(bottom: 20),
       decoration: BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage(image),
-          fit: BoxFit.contain,
-        ),
+        image: DecorationImage(image: AssetImage(image), fit: BoxFit.contain),
       ),
     );
   }

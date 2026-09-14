@@ -1,5 +1,3 @@
-// ignore_for_file: deprecated_member_use
-
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:web_dashboard/utils/constants.dart';
@@ -15,9 +13,9 @@ class Container5 extends StatefulWidget {
 class _Container5State extends State<Container5> {
   @override
   Widget build(BuildContext context) {
-    return ScreenTypeLayout(
-      mobile: mobileContainer5(),
-      desktop: desktopContainer5(),
+    return ScreenTypeLayout.builder(
+      mobile: (BuildContext context) => mobileContainer5(),
+      desktop: (BuildContext context) => desktopContainer5(),
     );
   }
 

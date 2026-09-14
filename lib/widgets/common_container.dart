@@ -5,10 +5,7 @@ import 'package:web_dashboard/utils/constants.dart';
 Widget commonContainer(String s1, s2, s3, image, bool imageLeft) {
   return Container(
     color: Colors.white,
-    padding: EdgeInsets.symmetric(
-      horizontal: w! / 10,
-      vertical: 30,
-    ),
+    padding: EdgeInsets.symmetric(horizontal: w! / 10, vertical: 30),
     child: Row(
       children: [
         imageLeft
@@ -26,15 +23,13 @@ Widget commonContainer(String s1, s2, s3, image, bool imageLeft) {
             : Container(),
         Expanded(
           child: Column(
-            crossAxisAlignment:
-                imageLeft ? CrossAxisAlignment.end : CrossAxisAlignment.start,
+            crossAxisAlignment: imageLeft
+                ? CrossAxisAlignment.end
+                : CrossAxisAlignment.start,
             children: [
               Text(
                 s1.toUpperCase(),
-                style: TextStyle(
-                  color: Colors.grey.shade400,
-                  fontSize: 16,
-                ),
+                style: TextStyle(color: Colors.grey.shade400, fontSize: 16),
               ),
               const SizedBox(height: 10),
               Text(
@@ -51,10 +46,7 @@ Widget commonContainer(String s1, s2, s3, image, bool imageLeft) {
               Text(
                 s3,
                 textAlign: imageLeft ? TextAlign.right : TextAlign.left,
-                style: TextStyle(
-                  color: Colors.grey.shade400,
-                  fontSize: 16,
-                ),
+                style: TextStyle(color: Colors.grey.shade400, fontSize: 16),
               ),
               const SizedBox(height: 20),
               TextButton.icon(
@@ -84,7 +76,7 @@ Widget commonContainer(String s1, s2, s3, image, bool imageLeft) {
                   ),
                 ),
               )
-            : Container()
+            : Container(),
       ],
     ),
   );
@@ -92,10 +84,7 @@ Widget commonContainer(String s1, s2, s3, image, bool imageLeft) {
 
 Widget commonContainerMobile(String s1, s2, s3, image, bool imageLeft) {
   return Container(
-    padding: EdgeInsets.symmetric(
-      horizontal: w! / 10,
-      vertical: 30,
-    ),
+    padding: EdgeInsets.symmetric(horizontal: w! / 10, vertical: 30),
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
@@ -111,10 +100,7 @@ Widget commonContainerMobile(String s1, s2, s3, image, bool imageLeft) {
         const SizedBox(height: 20),
         Text(
           s1.toUpperCase(),
-          style: TextStyle(
-            color: Colors.grey.shade400,
-            fontSize: 14,
-          ),
+          style: TextStyle(color: Colors.grey.shade400, fontSize: 14),
         ),
         const SizedBox(height: 10),
         Text(
@@ -131,10 +117,7 @@ Widget commonContainerMobile(String s1, s2, s3, image, bool imageLeft) {
         Text(
           s3,
           textAlign: TextAlign.center,
-          style: TextStyle(
-            color: Colors.grey.shade400,
-            fontSize: 16,
-          ),
+          style: TextStyle(color: Colors.grey.shade400, fontSize: 16),
         ),
         const SizedBox(height: 20),
         TextButton.icon(
@@ -144,10 +127,7 @@ Widget commonContainerMobile(String s1, s2, s3, image, bool imageLeft) {
             size: 20,
             color: AppColors.primary,
           ),
-          label: Text(
-            'Learn more',
-            style: TextStyle(color: AppColors.primary),
-          ),
+          label: Text('Learn more', style: TextStyle(color: AppColors.primary)),
         ),
       ],
     ),
