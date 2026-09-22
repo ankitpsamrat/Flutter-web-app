@@ -51,9 +51,10 @@ class _Container2State extends State<Container2> {
             padding: const EdgeInsets.symmetric(vertical: 40),
             child: Column(
               children: [
-                companyLogo(fb),
-                companyLogo(google),
-                companyLogo(cocacola),
+                companyLogo(anchorLogo),
+                companyLogo(haveilsLogo),
+                companyLogo(ushaLogo),
+                companyLogo(vGuardLogo),
                 companyLogo(samsung),
               ],
             ),
@@ -124,9 +125,10 @@ class _Container2State extends State<Container2> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                companyLogo(fb),
-                companyLogo(google),
-                companyLogo(cocacola),
+                companyLogo(anchorLogo),
+                companyLogo(haveilsLogo),
+                companyLogo(ushaLogo),
+                companyLogo(vGuardLogo),
                 companyLogo(samsung),
               ],
             ),

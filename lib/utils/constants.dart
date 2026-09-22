@@ -13,3 +13,7 @@ const String samsung = 'assets/images/samsung.png';
 const String dashboard = 'assets/images/dashboard.png';
 const String vector1 = 'assets/images/vector.png';
 const String vector2 = 'assets/images/vector1.png';
+const String anchorLogo = 'assets/images/anchor_logo.webp';
+const String haveilsLogo = 'assets/images/haveils_logo.jpg';
+const String ushaLogo = 'assets/images/usha_logo.jpg';
+const String vGuardLogo = 'assets/images/v_guard_logo.png';

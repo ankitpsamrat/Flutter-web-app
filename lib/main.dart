@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Xpense',
+      title: 'Gopal Electronics',
       theme: ThemeData(
         fontFamily: 'HindSiliguri',
         brightness: Brightness.light,
