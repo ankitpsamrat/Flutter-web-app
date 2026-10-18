@@ -25,7 +25,6 @@ class _HomeState extends State<Home> {
         child: Column(
           children: [
             NavBar(),
-            SizedBox(height: 100),
             Container1(),
             Container2(),
             Container3(),

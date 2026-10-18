@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:web_dashboard/utils/colors.dart';
-import 'package:web_dashboard/utils/constants.dart';
 import 'package:web_dashboard/utils/styles.dart';
 
 class NavBar extends StatefulWidget {
@@ -71,8 +70,8 @@ Widget navButton(String text) {
 }
 
 Widget navLogo() {
-  return ClipRRect(
-    borderRadius: BorderRadius.circular(10),
-    child: Image.asset(logo, width: 100, fit: BoxFit.contain),
+  return const Text(
+    'Gopal Electronics',
+    style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
   );
 }

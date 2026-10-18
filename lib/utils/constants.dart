@@ -3,6 +3,7 @@ double? w;
 
 //Images
 const String logo = 'assets/images/name_icon.png';
+const String appIcon = 'assets/images/app_icon.png';
 const String illustration1 = 'assets/images/illustration1.png';
 const String illustration2 = 'assets/images/illustration2.png';
 const String illustration3 = 'assets/images/illustration3.png';
